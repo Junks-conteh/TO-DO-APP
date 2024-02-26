@@ -1,0 +1,221 @@
+ html,
+ body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+ }
+ *{
+    box-sizing: border-box;
+ }
+ img{
+    max-width: 100%;
+ }
+ .flex-row{
+    display: flex;
+    /* flex-flow: row-reverse; */
+    align-items: center;
+ }
+ .dark-theme{
+    --bg-top-image: 0 0 url(images/bg-desktop-dark.jpg) no-repeat;
+   background-color: hsl(235, 24%, 19%);
+   color:#fff;
+ }
+ body{
+    font: 400 18px/1 "Josefin", sans-serif;
+    background: var(--bg-top-image);
+    background-color: hls(235, 24%, 19%);
+    background-size: contain;
+    color: #fff;
+ }
+ header,
+ main{
+    max-width: 545px;
+    margin: 0 auto;
+ }
+ header{
+    justify-content: space-between;
+    padding: 52px 0 11px;
+
+ }
+ h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 1rem;
+ }
+ .block-theme{
+    margin:-10px 0 0 ;
+ }
+ .block-theme #theme{
+    display: none;
+ }
+ .block-theme #theme + label::before{
+    content: "";
+    background: url(images/icon-sun.svg);
+    display: flex;
+    width:26px ;
+    height: 26px;
+    cursor: pointer;
+ }
+ .block-theme #theme:checked + label::before{
+    background: url(images/icon-moon.svg);
+ }
+ .add-new-item{
+    background: hsl(233, 18%, 28%);
+    height:65px ;
+    border-radius: 5px;
+    margin: 0 0 24px;
+    padding: 5px 26px;
+    position: relative;
+ }
+ .add-new-item #addi{
+    background: transparent;
+    color:  hsl(0, 0%, 83%);
+    border: none;
+    outline: 0;
+    width: 100%;
+    height:50px ;
+    font:400 18px/1 "Josefin", sans-serif ;
+    margin:4px 0 0 47px ;
+    letter-spacing: -0.2px;
+ }
+ .add-new-item span{
+    width:25px ;
+    height: 25px;
+    border: 1px solid #fff;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left:26px ;
+    top: 21px;
+    cursor: pointer;
+ }
+ .add-new-item span:hover{
+    background: center url(images/icon-check.svg)no-repeat, linear-gradient(135deg, hsl(192, 100%, 67%), hsl(286, 87%, 65%));
+ }
+ .content{
+    background:  hsl(233, 18%, 28%);
+    border-radius: 5px;
+    box-shadow: 0 42 30px -9px ;
+ }
+ ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ ul li{
+    padding: 25px 10px 0 25px;
+    min-height: 65px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+ }
+ ul li input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    /* padding: 2px 0 0 48px; */
+    /* font-size: 1.1rem; */
+ }
+ ul li label{
+    position: relative;
+    cursor: pointer;
+    padding: 2px 0 0 48px;
+    font-size: 1.1rem;
+
+ }
+.checkmark{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+ul li.hidden{
+    display: none;
+}
+ul li input[type="checkbox"] ~ .checkmark{
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+ul li input[type="checkbox"] ~ .checkmark:hover{
+    border: 0;
+    padding:1px ;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(286, 87%, 65%));
+}
+ul li input[type="checkbox"] ~ .checkmark:hover::before{
+    content: "";
+    width:23px ;
+    height: 23px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+}
+ul li input[type="checkbox"]:checked ~ .checkmark{
+
+}
+.remove{
+    background: url(images/icon-cross.svg) no-repeat;
+    width: 18px;
+    height: 18px;
+    /* display: none; */
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+ul li:hover .remove{
+    display: block;
+}
+.items-left{
+    margin-right: 80px;
+}
+.bottom-items{
+    padding: 20px 20px 20px 27px;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    align-items: baseline;
+    border-radius: 5px;
+    background: hsl(233, 18%, 28%);
+    color: #fff;
+}
+.filter{
+    margin-right: 47px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
