@@ -59,8 +59,8 @@
     height: 26px;
     cursor: pointer;
  }
- .block-theme #theme:checked + label::before{
-    background: url(images/icon-moon.svg);
+ .block-theme  #theme:checked + label::before{
+   background: url(images/icon-moon.svg);
  }
  .add-new-item{
     background: hsl(233, 18%, 28%);
@@ -151,11 +151,11 @@ ul li input[type="checkbox"] ~ .checkmark:hover::before{
     width:23px ;
     height: 23px;
     border-radius: 50%;
-    background: #fff;
+    /* background: #fff; */
     display: block;
 }
 ul li input[type="checkbox"]:checked ~ .checkmark{
-
+   background: linear-gradient(hsl(192, 100%, 67%), hsl(286, 87%, 65%));
 }
 .remove{
     background: url(images/icon-cross.svg) no-repeat;
@@ -185,6 +185,51 @@ ul li:hover .remove{
 .filter{
     margin-right: 47px;
 }
+.filter input[type="radio"]{
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+}
+
+.filter label{
+   cursor: pointer;
+   padding: 0 10px;
+}
+
+.filter label:hover{
+   /* background: #fff; */
+   color: #281aeb;
+   /* color: rgb(249, 249, 252); */
+}
+/* .filter input[type="radio"]:checked ~ span{
+   color: rgb(35, 35, 218);
+} */
+.clear{
+   color: hsl(231, 28%, 91%);
+   cursor: pointer;
+}
+
+.clear:hover{
+   color: hsl(228, 15%, 94%);
+}
+/* .block-theme:hover{
+   background: url(images/icon-moon.svg);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

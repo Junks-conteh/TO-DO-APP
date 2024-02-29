@@ -10,22 +10,22 @@
    <header class="flex-row">
     <h1>Todo</h1>
     <div class="block-theme">
-        <input type="checkbox" id="theme">
-        <label for=""></label>
+        <input type="checkbox" name="theme" id="theme">
+        <label for="theme"></label>
     </div>
    </header> 
 
    <main>
     <div class="add-new-item flex-row" >
         <span></span>
-        <input type="text" placeholder="Create a new todo...." id="addi">
+        <input type="text" placeholder="Create a new todo...." name="addi" id="addi">
     </div>
 
     <section class="content">
        <ul>
         <li class="flex-row">
             <label class="list-item">
-                <input type="checkbox">
+                <input type="checkbox" name="todoitem" checked>
                 <span class="checkmark"></span>
                 <span class="text">Complete online Javascript course</span>
             </label>
@@ -33,7 +33,7 @@
         </li>
         <li class="flex-row">
           <label class="list-item">
-            <input type="checkbox">
+            <input type="checkbox" name="todoitem">
             <span class="checkmark"></span>
             <span class="text">Jog around the park 3x</span>
           </label>
@@ -41,7 +41,7 @@
         </li>
         <li class="flex-row">
             <label class="list-item">
-            <input type="checkbox">
+            <input type="checkbox" name="todoitem">
             <span class="checkmark"></span>
             <span class="text">10 minutes meditation</span>
         </label>
@@ -50,7 +50,7 @@
         </li>
         <li class="flex-row">
             <label class="list-item">
-                <input type="checkbox">
+                <input type="checkbox" name="todoitem">
                 <span class="checkmark"></span>
                 <span class="text">Read for 1 hour</span>
             </label>
@@ -58,7 +58,7 @@
         </li>
          <li class="flex-row">
             <label class="list-item">
-                <input type="checkbox">
+                <input type="checkbox" name="todoitem">
                 <span class="checkmark"></span>
                 <span class="text">Pick up groceries</span>
             </label>
@@ -66,7 +66,7 @@
          </li>
           <li class="flex-row">
             <label class="list-item">
-                <input type="checkbox">
+                <input type="checkbox" name="todoitem">
                 <span class="checkmark"></span>
                 <span class="text">Complete Todo App on Frontend Mentor</span>
             </label>
@@ -80,11 +80,11 @@
                 <span>All</span>
             </label>
             <label>
-                <input type="radio" id="active">
+                <input type="radio" checked id="active">
                 <span>Active</span>
             </label>
             <label>
-                <input type="radio" id="completed">
+                <input type="radio" checked id="completed">
                 <span>completed</span>
             </label>
         </div>
@@ -113,6 +113,6 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
